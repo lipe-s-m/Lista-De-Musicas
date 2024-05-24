@@ -1,4 +1,10 @@
+@import '~@fontsource/montserrat';
+
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #E3E1D9; /* Azul com 50% de opacidade */
 }

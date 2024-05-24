@@ -1,0 +1,231 @@
+.container-fundo{
+    background-color: #F2EFE5;
+    width: 490px;
+    margin: 0 auto 300px;
+    margin-top: 5%;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 14%;
+    
+
+}
+.title{
+    width: auto;
+    height: 80px;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 1000;
+    opacity: 90%;
+    margin-top: 6%;
+}
+.info{
+    width: 420px;
+    height: 200px;
+    position: relative;
+    margin-top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* NOME */
+.info-nome{
+    width: auto;
+    height: 72px;
+
+}
+.info-nome-title{
+    width: auto;
+    height: 32px;
+    top: 50%;
+    left: -25%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 560;
+}
+.info-nome-img{
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    background-position: left center; /* Cola a imagem à esquerda */
+    width: 25px;
+    height: 24px;
+    margin-left: 8px;
+    opacity: 50%;
+}
+
+.info-label-nome{
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    margin-top: 2%;
+    width: 350px;
+}
+.info-label-nome input{ 
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    left: 3%;
+    height: 32px;
+    width: 350px;
+    border: none;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    background-color: #F2EFE5;
+    top: -5px;
+
+}
+.info-label-nome input::placeholder{
+    color: black;
+    opacity: 20%;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+hr{
+    width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+    height: 0.1px;
+    border: none; /* Remove a borda padrão */
+    background-color: #000; /* Define a cor do traço */
+    margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
+    opacity: 0.5; /* Define a opacidade do traço */
+}
+
+/* TOM */
+
+.info-tom{
+    margin-top: 20px;
+    width: auto;
+    height: 72px;
+}
+.info-tom-title{
+    width: auto;
+    height: 32px;
+    top: 50%;
+    left: -25%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 560;
+}
+.info-tom-img{
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    background-position: left center; /* Cola a imagem à esquerda */
+    width: 25px;
+    height: 24px;
+    margin-left: 8px;
+    opacity: 50%;
+}
+
+.info-label-tom{
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    margin-top: 2%;
+    width: 350px;
+}
+.info-label-tom input{ 
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    left: 3%;
+    height: 32px;
+    width: 350px;
+    border: none;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    background-color: #F2EFE5;
+    top: -5px;
+
+}
+.info-label-tom input::placeholder{
+    color: black;
+    opacity: 20%;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+hr{
+    width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+    height: 0.1px;
+    border: none; /* Remove a borda padrão */
+    background-color: #000; /* Define a cor do traço */
+    margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
+    opacity: 0.5; /* Define a opacidade do traço */
+}
+
+/* TOM */
+
+.info-momento{
+    margin-top: 20px;
+    width: auto;
+    height: 72px;
+}
+.info-momento-title{
+    width: auto;
+    height: 32px;
+    top: 50%;
+    left: -25%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 560;
+}
+.info-momento-img{
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    background-position: left center; /* Cola a imagem à esquerda */
+    width: 25px;
+    height: 24px;
+    margin-left: 8px;
+    opacity: 50%;
+}
+
+.info-label-momento{
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    margin-top: 2%;
+    width: 350px;
+}
+.info-label-momento input{ 
+    display: inline-block; /* Isso permite definir largura e altura */
+    position: relative;
+    left: 1.5%;
+    height: 32px;
+    width: 375px;
+    border: none;
+    text-align: center; /* Centralize o conteúdo do rótulo */
+    background-color: #F2EFE5;
+    top: -5px;
+
+}
+.info-label-momento input::placeholder{
+    color: black;
+    opacity: 20%;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+hr{
+    width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+    height: 0.1px;
+    border: none; /* Remove a borda padrão */
+    background-color: #000; /* Define a cor do traço */
+    margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
+    opacity: 0.5; /* Define a opacidade do traço */
+}
+
+
+/* botoes */
+.confirmar{
+    width: 140px;
+    height: 50px;
+    display: block;
+  
+    background-color: brown;
+    color: #F2EFE5;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%; /* Centralizar o botão horizontalmente */
+    transform: translateX(-50%); /* Centralizar o botão horizontalmente */
+    margin-top: 7%;
+
+}
+
+.test{
+    z-index: 8;
+}
