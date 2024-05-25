@@ -5,33 +5,34 @@ import tomIcon from "../../UI/Icons/003-keyboard.png";
 import momentoIcon from "../../UI/Icons/001-clock.png";
 
 function Home() {
-  const [conjuntos, setConjuntos] = useState([
+  const [musicas, setMusicas] = useState([
     { textoNome: "", textoTom: "", textoMomento: "" },
   ]);
 
-  const adicionarConjunto = () => {
-    setConjuntos([
-      ...conjuntos,
-      { textoNome: "", textoTom: "", textoMomento: "" },
-    ]);
+  const adicionarMusica = () => {
+    setMusicas([...musicas, { textoNome: "", textoTom: "", textoMomento: "" }]);
+  };
+  const excluirMusica = (index) => {
+    const novosMusicas = [...musicas];
+    const musicasFiltered = novosMusicas.filter((_, i) => i !== index);
+    setMusicas(musicasFiltered);
   };
 
   const handleChange = (index, campo, valor) => {
-    const novosConjuntos = [...conjuntos];
-    novosConjuntos[index][campo] = valor;
-    setConjuntos(novosConjuntos);
+    const novosMusicas = [...musicas];
+    novosMusicas[index][campo] = valor;
+    setMusicas(novosMusicas);
   };
 
   // texto enviado
-  const handleSubmit = ( event) => {
-    
+  const handleSubmit = (event) => {
     let textoResultado = "";
     event.preventDefault();
-    for(let i = 0; i < conjuntos.length; i++){
-      const { textoNome, textoTom, textoMomento } = conjuntos[i];
+    for (let i = 0; i < musicas.length; i++) {
+      const { textoNome, textoTom, textoMomento } = musicas[i];
       textoResultado += `\n* ${textoNome}  -  *(${textoTom})* / ${textoMomento}`;
     }
-   
+
     alert(`Texto digitado:\n${textoResultado}`);
 
     // Copia o texto para a área de transferência
@@ -48,12 +49,10 @@ function Home() {
       <div className="container-fundo">
         <div className="title"> Lista de Musicas </div>
 
-        {conjuntos.map((conjunto, index) => (
-          <form
-            key={index}
-            className="info"
-            onSubmit={(e) => handleSubmit(index, e)}
-          >
+        {musicas.map((conjunto, index) => (
+          <form key={index} className="info" onSubmit={(e) => handleSubmit(e)}>
+                        <hr className="linha-divisoria"></hr>
+
             {/* NOME */}
             <div className="info-nome">
               <div className="info-nome-title">Nome da Música:</div>
@@ -116,14 +115,27 @@ function Home() {
               </label>
               <hr></hr>
             </div>
-            
+
+            <button
+              className="excluir-musica"
+              type="button"
+              onClick={() => excluirMusica(index)}
+            >
+              Excluir
+            </button>
+
           </form>
         ))}
-        <button className="confirmar" type="submit" onClick={(e) => handleSubmit( e)}>
+        <button
+          className="confirmar-envio"
+          type="submit"
+          onClick={(e) => handleSubmit(e)}>
           Enviar
         </button>
-        <button onClick={adicionarConjunto}>Adicionar Musica</button>
-        
+
+        <button className="adicionar-musica" type="button" onClick={adicionarMusica}>
+          Adicionar Musica
+        </button>
       </div>
     </>
   );
