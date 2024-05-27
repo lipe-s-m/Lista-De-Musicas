@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/%7BLista-De-Musicas%7D/static/css/main.70b404a3.css",
-    "main.js": "/%7BLista-De-Musicas%7D/static/js/main.cb0232a1.js",
-    "static/js/453.419a5d54.chunk.js": "/%7BLista-De-Musicas%7D/static/js/453.419a5d54.chunk.js",
-    "static/media/montserrat-latin-400-normal.woff": "/%7BLista-De-Musicas%7D/static/media/montserrat-latin-400-normal.b48c3d9a8c0a49c1c7b4.woff",
-    "static/media/montserrat-latin-ext-400-normal.woff": "/%7BLista-De-Musicas%7D/static/media/montserrat-latin-ext-400-normal.cf42d14e809c6fdc0929.woff",
-    "static/media/001-clock.png": "/%7BLista-De-Musicas%7D/static/media/001-clock.586fb54278bafe9f6f5e.png",
-    "static/media/montserrat-latin-400-normal.woff2": "/%7BLista-De-Musicas%7D/static/media/montserrat-latin-400-normal.9ef09180105730e3cb92.woff2",
-    "static/media/montserrat-latin-ext-400-normal.woff2": "/%7BLista-De-Musicas%7D/static/media/montserrat-latin-ext-400-normal.83d2d15dd908a3cf998f.woff2",
-    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/%7BLista-De-Musicas%7D/static/media/montserrat-cyrillic-ext-400-normal.183f43730b586802d1a0.woff",
-    "static/media/montserrat-cyrillic-400-normal.woff": "/%7BLista-De-Musicas%7D/static/media/montserrat-cyrillic-400-normal.439a7e91c905d22b3543.woff",
-    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/%7BLista-De-Musicas%7D/static/media/montserrat-cyrillic-ext-400-normal.32618c7b62b4ab3c0aff.woff2",
-    "static/media/montserrat-cyrillic-400-normal.woff2": "/%7BLista-De-Musicas%7D/static/media/montserrat-cyrillic-400-normal.4f7a9c3142f9879900c9.woff2",
-    "static/media/montserrat-vietnamese-400-normal.woff": "/%7BLista-De-Musicas%7D/static/media/montserrat-vietnamese-400-normal.44e6450ead6330cb0b77.woff",
-    "static/media/montserrat-vietnamese-400-normal.woff2": "/%7BLista-De-Musicas%7D/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
-    "index.html": "/%7BLista-De-Musicas%7D/index.html",
-    "main.70b404a3.css.map": "/%7BLista-De-Musicas%7D/static/css/main.70b404a3.css.map",
-    "main.cb0232a1.js.map": "/%7BLista-De-Musicas%7D/static/js/main.cb0232a1.js.map",
-    "453.419a5d54.chunk.js.map": "/%7BLista-De-Musicas%7D/static/js/453.419a5d54.chunk.js.map"
+    "main.css": "/Lista-De-Musicas/static/css/main.d3aac140.css",
+    "main.js": "/Lista-De-Musicas/static/js/main.00d56fc7.js",
+    "static/js/453.419a5d54.chunk.js": "/Lista-De-Musicas/static/js/453.419a5d54.chunk.js",
+    "static/media/montserrat-latin-400-normal.woff": "/Lista-De-Musicas/static/media/montserrat-latin-400-normal.b48c3d9a8c0a49c1c7b4.woff",
+    "static/media/montserrat-latin-ext-400-normal.woff": "/Lista-De-Musicas/static/media/montserrat-latin-ext-400-normal.cf42d14e809c6fdc0929.woff",
+    "static/media/001-clock.png": "/Lista-De-Musicas/static/media/001-clock.586fb54278bafe9f6f5e.png",
+    "static/media/montserrat-latin-400-normal.woff2": "/Lista-De-Musicas/static/media/montserrat-latin-400-normal.9ef09180105730e3cb92.woff2",
+    "static/media/montserrat-latin-ext-400-normal.woff2": "/Lista-De-Musicas/static/media/montserrat-latin-ext-400-normal.83d2d15dd908a3cf998f.woff2",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/Lista-De-Musicas/static/media/montserrat-cyrillic-ext-400-normal.183f43730b586802d1a0.woff",
+    "static/media/montserrat-cyrillic-400-normal.woff": "/Lista-De-Musicas/static/media/montserrat-cyrillic-400-normal.439a7e91c905d22b3543.woff",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/Lista-De-Musicas/static/media/montserrat-cyrillic-ext-400-normal.32618c7b62b4ab3c0aff.woff2",
+    "static/media/montserrat-cyrillic-400-normal.woff2": "/Lista-De-Musicas/static/media/montserrat-cyrillic-400-normal.4f7a9c3142f9879900c9.woff2",
+    "static/media/montserrat-vietnamese-400-normal.woff": "/Lista-De-Musicas/static/media/montserrat-vietnamese-400-normal.44e6450ead6330cb0b77.woff",
+    "static/media/montserrat-vietnamese-400-normal.woff2": "/Lista-De-Musicas/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
+    "index.html": "/Lista-De-Musicas/index.html",
+    "main.d3aac140.css.map": "/Lista-De-Musicas/static/css/main.d3aac140.css.map",
+    "main.00d56fc7.js.map": "/Lista-De-Musicas/static/js/main.00d56fc7.js.map",
+    "453.419a5d54.chunk.js.map": "/Lista-De-Musicas/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70b404a3.css",
-    "static/js/main.cb0232a1.js"
+    "static/css/main.d3aac140.css",
+    "static/js/main.00d56fc7.js"
   ]
 }
