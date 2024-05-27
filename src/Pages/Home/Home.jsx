@@ -130,7 +130,7 @@ function Home() {
           className="confirmar-envio"
           type="submit"
           onClick={(e) => handleSubmit(e)}>
-          Enviar
+          Prosseguir
         </button>
 
         <button className="adicionar-musica" type="button" onClick={adicionarMusica}>
