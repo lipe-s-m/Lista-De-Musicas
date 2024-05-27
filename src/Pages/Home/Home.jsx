@@ -134,7 +134,7 @@ function Home() {
         </button>
 
         <button className="adicionar-musica" type="button" onClick={adicionarMusica}>
-          Adicionar Musica
+          Adicionasssr Musica
         </button>
       </div>
     </>
