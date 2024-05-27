@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://lipe-s-m.github.io/Lista-De-Musicas",
+  "homepage": "https://{lipe-s-m.github.io/Lista-De-Musicas",
   "private": true,
   "dependencies": {
     "@fontsource/montserrat": "^5.0.18",
