@@ -240,6 +240,20 @@ hr {
   transform: translateX(-50%); /* Centralizar o botão horizontalmente */
   margin-top: -4.5%;
 }
+.confirmar-envio {
+  width: 180px;
+  height: 50px;
+  display: block;
+  background-color: brown;
+  color: #f2efe5;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%; /* Centralizar o botão horizontalmente */
+  transform: translateX(-50%); /* Centralizar o botão horizontalmente */
+  margin-top: -4.5%;
+}
 .excluir-musica {
   background-color: #d9534f;
   margin-top: 15px;
