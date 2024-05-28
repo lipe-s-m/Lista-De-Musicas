@@ -1,10 +1,14 @@
 import { useState } from "react";
-import "./Home.css";
+import "./Musicas.css";
 import nomeIcon from "../../UI/Icons/002-music-player.png";
 import tomIcon from "../../UI/Icons/003-keyboard.png";
 import momentoIcon from "../../UI/Icons/001-clock.png";
+import { useParams } from "react-router-dom";
 
-function Home() {
+function Musicas() {
+  const { nomeCantor } = useParams();
+  const { dataCulto } = useParams();
+
   const [musicas, setMusicas] = useState([
     { textoNome: "", textoTom: "", textoMomento: "" },
   ]);
@@ -26,7 +30,7 @@ function Home() {
 
   // texto enviado
   const handleSubmit = (event) => {
-    let textoResultado = "";
+    let textoResultado = `Culto dia ${dataCulto} \n *[ ${nomeCantor} ]*`;
     event.preventDefault();
     for (let i = 0; i < musicas.length; i++) {
       const { textoNome, textoTom, textoMomento } = musicas[i];
@@ -51,7 +55,7 @@ function Home() {
 
         {musicas.map((conjunto, index) => (
           <form key={index} className="info" onSubmit={(e) => handleSubmit(e)}>
-                        <hr className="linha-divisoria"></hr>
+            <hr className="linha-divisoria"></hr>
 
             {/* NOME */}
             <div className="info-nome">
@@ -123,17 +127,21 @@ function Home() {
             >
               Excluir
             </button>
-
           </form>
         ))}
         <button
           className="confirmar-envio"
           type="submit"
-          onClick={(e) => handleSubmit(e)}>
+          onClick={(e) => handleSubmit(e)}
+        >
           Prosseguir
         </button>
 
-        <button className="adicionar-musica" type="button" onClick={adicionarMusica}>
+        <button
+          className="adicionar-musica"
+          type="button"
+          onClick={adicionarMusica}
+        >
           Adicionar Musica
         </button>
       </div>
@@ -141,4 +149,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Musicas;

@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home/Home";
+import Musicas from "../Pages/Home/Musicas";
 import Concluido from "../Pages/Concluido";
+import Cantor from "../Pages/Home/Cantor";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Cantor />}></Route>
+        <Route path="/Musicas/:nomeCantor/:dataCulto" element={<Musicas />}></Route>
         <Route path="/Concluido" element={<Concluido />}></Route>
       </Routes>
     </BrowserRouter>
