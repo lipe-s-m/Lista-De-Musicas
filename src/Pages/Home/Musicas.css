@@ -330,7 +330,7 @@ hr {
   }
   .info {
     width: auto;
-    padding-bottom: 19%;
+    padding-bottom: 100px;
   }
   .info-data,
   .info-momento,
@@ -399,7 +399,7 @@ hr {
   }
   .info {
     width: auto;
-    padding-bottom: 19%;
+    padding-bottom: 90px;
   }
   .info-data,
   .info-momento,
@@ -465,7 +465,7 @@ hr {
   }
   .info {
     width: auto;
-    padding-bottom: 19%;
+    padding-bottom: 90px;
   }
   .info-data,
   .info-momento,
@@ -577,6 +577,9 @@ hr {
 .confirmar-envio{
   margin-top: 55px;
 }
+.excluir-musica{
+  margin-top: 30px;
+}
 }
 /* tablet */
 @media (min-width: 568px) and (max-width: 1024px) {
@@ -593,12 +596,12 @@ hr {
     width: 450px;
   }
   .adicionar-musica{
-    margin-bottom: -5%;
+    margin-bottom: 0%;
     height: 63px;
     width: 240px;
   }
   .confirmar-envio{
-    margin-top: 11%;
+    margin-top: 14%;
     height: 63px;
     width: 240px;
   }
