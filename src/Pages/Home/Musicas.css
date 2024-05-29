@@ -312,7 +312,7 @@ hr {
 }
 
 /* celular */
-@media (max-width: 370px) {
+@media (max-width: 387px) {
   .container-fundo {
     width: 70%;
     padding-bottom: 20%;
@@ -355,7 +355,7 @@ hr {
   .info-label-nome input::placeholder,
   .info-label-tom input::placeholder {
     font-size: 12.3px;
-    text-align: left;
+    text-align: center;
   }
   .adicionar-musica{
     margin-bottom: 18%;
@@ -370,8 +370,15 @@ hr {
   .excluir-musica{
     margin-top: 30px;
   }
+  .info-tom-img,
+  .info-momento-img,
+  .info-nome-img{
+    margin-left: 0px;
+    height: 17px;
+    width: 18px;
+  }
 }
-@media (min-width: 371px) and (max-width: 450px) {
+@media (min-width: 388px) and (max-width: 450px) {
   .container-fundo {
     width: 74%;
     padding-bottom: 20%;
@@ -391,26 +398,34 @@ hr {
     width: auto;
     padding-bottom: 19%;
   }
+  .info-data,
   .info-momento,
   .info-nome,
   .info-tom {
     margin-top: 40px;
   }
+  .info-label-data,
   .info-label-momento,
   .info-label-nome,
   .info-label-tom {
     width: 260px;
+
+  }
+  .info-label-data input{
+        width: 290px;
   }
   .info-label-momento input,
   .info-label-nome input,
   .info-label-tom input {
-    width: 255px;
+    width: 100%;
+    left: 1%;
   }
+  .info-label-data input::placeholder,
   .info-label-momento input::placeholder,
   .info-label-nome input::placeholder,
   .info-label-tom input::placeholder {
-    font-size: 15.3px;
-    text-align: left;
+    font-size: 15.7px;
+    text-align: center;
   }
   .excluir-musica{
     margin-top: 15%;
@@ -427,6 +442,11 @@ hr {
   }
   .proxima-pagina{
     margin-top: -25%;
+  }
+  .info-tom-img,
+  .info-momento-img,
+  .info-nome-img{
+    margin-left: 0px;
   }
 }
 @media (min-width: 451px) and (max-width: 567px) {
@@ -458,18 +478,18 @@ hr {
 .info-label-momento,
 .info-label-nome,
 .info-label-tom {
-  width: 260px;
+  width: 80%;
 }
 .info-label-momento input,
 .info-label-nome input,
 .info-label-tom input {
-  width: 255px;
+  width: 100%;
 }
 .info-label-momento input::placeholder,
 .info-label-nome input::placeholder,
 .info-label-tom input::placeholder {
-  font-size: 15.3px;
-  text-align: left;
+  font-size: 17.3px;
+  text-align: center;
 }
 .adicionar-musica{
   margin-bottom: 10%;
@@ -492,9 +512,7 @@ hr {
     width: 74%;
     padding-bottom: 20%;
   }
-  .title {
-    color: #5cb85c;
-  }
+  
   .info {
     width: 450px;
   }
