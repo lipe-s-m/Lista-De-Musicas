@@ -32,7 +32,7 @@ function Cantor() {
   const handleSubmit = (event) => {
 
     if(nomeCantor.length === 0 || dataCulto.length < 10){
-      alert("preenche os bgl mano");
+      alert("Você deve preencher todos os campos para poder prosseguir!");
     }
     else{
       const formattedDate = dataCulto.replace(/\//g, "-");
@@ -81,7 +81,7 @@ function Cantor() {
                 type="text"
                 value={dataCulto}
                 onChange={(e) => handleChangeData(e.target.value)}
-                placeholder="Insira a Data do Culto aqui (dd/mm/aaaa)"
+                placeholder="Insira a Data do Culto (dd/mm/aaaa)"
                 maxLength="10"
               />
             </label>
