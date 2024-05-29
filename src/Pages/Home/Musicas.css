@@ -202,6 +202,33 @@ hr {
   font-size: 22px;
   font-weight: 200;
 }
+.info-label-data {
+  display: inline-block; /* Isso permite definir largura e altura */
+  position: relative;
+  text-align: center; /* Centralize o conteúdo do rótulo */
+  margin-top: 2%;
+  width: 350px;
+}
+.info-label-data input {
+  display: inline-block; /* Isso permite definir largura e altura */
+  position: relative;
+  left: 1.5%;
+  height: 32px;
+  width: 375px;
+  border: none;
+  text-align: center; /* Centralize o conteúdo do rótulo */
+  background-color: #f2efe5;
+  top: -5px;
+}
+.info-label-data input::placeholder {
+  color: black;
+  opacity: 20%;
+  font-size: 18.4px;
+  font-weight: 200;
+}
+input{
+  font-size: 20px;
+}
 
 hr {
   width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
@@ -285,9 +312,13 @@ hr {
 }
 
 /* celular */
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .container-fundo {
-    width: 300px;
+    width: 70%;
+    padding-bottom: 20%;
+  }
+  .container-fundo-cantor {
+    width: 70%;
     padding-bottom: 20%;
   }
   .title {
@@ -301,42 +332,53 @@ hr {
     width: auto;
     padding-bottom: 19%;
   }
+  .info-data,
   .info-momento,
   .info-nome,
   .info-tom {
     margin-top: 40px;
   }
+  .info-label-data,
   .info-label-momento,
   .info-label-nome,
   .info-label-tom {
-    width: 260px;
+    width: 230px;
   }
+  .info-label-data input,
   .info-label-momento input,
   .info-label-nome input,
   .info-label-tom input {
-    width: 255px;
+    width: 225px;
   }
+  .info-label-data input::placeholder,
   .info-label-momento input::placeholder,
   .info-label-nome input::placeholder,
   .info-label-tom input::placeholder {
-    font-size: 15.3px;
+    font-size: 12.3px;
     text-align: left;
   }
   .adicionar-musica{
-    margin-bottom: 10%;
-    height: 43px;
+    margin-bottom: 18%;
+    height: 40px;
     width: 190px;
-    
+    margin-top: 22%;
     
   }
   .confirmar-envio{
-    margin-top: 55px;
+    margin-top: 24%;
+  }
+  .excluir-musica{
+    margin-top: 30px;
   }
 }
 @media (min-width: 371px) and (max-width: 450px) {
   .container-fundo {
-    width: 320px;
+    width: 74%;
     padding-bottom: 20%;
+  }
+  .container-fundo-cantor {
+    width: 74%;
+    padding-bottom: 0.1%;
   }
   .title {
     width: auto;
@@ -370,24 +412,106 @@ hr {
     font-size: 15.3px;
     text-align: left;
   }
+  .excluir-musica{
+    margin-top: 15%;
+  }
   .adicionar-musica{
-    margin-bottom: 10%;
+    margin-top: 20%;
+    margin-bottom: 22%;
     height: 43px;
     width: 190px;
     
-    
   }
   .confirmar-envio{
-    margin-top: 55px;
+    margin-top: 26%;
+  }
+  .proxima-pagina{
+    margin-top: -25%;
   }
 }
+@media (min-width: 451px) and (max-width: 567px) {
+  .container-fundo {
+    width: 74%;
+    padding-bottom: 20%;
+  }
+  .container-fundo-cantor {
+    width: 74%;
+    padding-bottom: 20%;
+  }
 
+.title {
+  width: auto;
+}
+.linha-divisoria{
+  margin-top: 52%; /* Espaçamento superior entre o hr e o conteúdo acima */
+
+}
+.info {
+  width: auto;
+  padding-bottom: 19%;
+}
+.info-momento,
+.info-nome,
+.info-tom {
+  margin-top: 40px;
+}
+.info-label-momento,
+.info-label-nome,
+.info-label-tom {
+  width: 260px;
+}
+.info-label-momento input,
+.info-label-nome input,
+.info-label-tom input {
+  width: 255px;
+}
+.info-label-momento input::placeholder,
+.info-label-nome input::placeholder,
+.info-label-tom input::placeholder {
+  font-size: 15.3px;
+  text-align: left;
+}
+.adicionar-musica{
+  margin-bottom: 10%;
+  height: 43px;
+  width: 190px;
+  
+  
+}
+.confirmar-envio{
+  margin-top: 55px;
+}
+}
 /* tablet */
 @media (min-width: 568px) and (max-width: 1024px) {
+  .container-fundo {
+    width: 74%;
+    padding-bottom: 20%;
+  }
+  .container-fundo-cantor {
+    width: 74%;
+    padding-bottom: 20%;
+  }
   .title {
     color: #5cb85c;
   }
   .info {
     width: 450px;
+  }
+  .adicionar-musica{
+    margin-bottom: -5%;
+    height: 63px;
+    width: 240px;
+  }
+  .confirmar-envio{
+    margin-top: 11%;
+    height: 63px;
+    width: 240px;
+  }
+  .proxima-pagina{
+
+      height: 63px;
+      width: 240px;
+    
   }
 }

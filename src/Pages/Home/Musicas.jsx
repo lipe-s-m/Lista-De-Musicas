@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 function Musicas() {
   const { nomeCantor } = useParams();
   const { dataCulto } = useParams();
+  const dataFormatted = dataCulto.replace(/-/g, "/");
 
   const [musicas, setMusicas] = useState([
     { textoNome: "", textoTom: "", textoMomento: "" },
@@ -21,20 +22,40 @@ function Musicas() {
     const musicasFiltered = novosMusicas.filter((_, i) => i !== index);
     setMusicas(musicasFiltered);
   };
-
+  //ao mudar valor do input
   const handleChange = (index, campo, valor) => {
     const novosMusicas = [...musicas];
     novosMusicas[index][campo] = valor;
     setMusicas(novosMusicas);
   };
 
+  const obterDiaSemana = (data) => {
+    console.log(data);
+    const [dia, mes, ano] = data.split("/");
+    const dataObj = new Date(`${ano}-${mes}-${dia}`);
+    console.log(dataObj);
+    const diaSemana = [
+      "Segunda-feira",
+      "Terça-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira",
+      "Sábado",
+      "Domingo",
+    ];
+    return diaSemana[dataObj.getDay()];
+  };
+
   // texto enviado
   const handleSubmit = (event) => {
-    let textoResultado = `Culto dia ${dataCulto} \n *[ ${nomeCantor} ]*`;
+    const diaSemana = obterDiaSemana(dataFormatted);
+    let textoResultado = `*Louvores ${diaSemana} - (${dataFormatted})* \n \n*[ ${nomeCantor} ]*`;
     event.preventDefault();
     for (let i = 0; i < musicas.length; i++) {
       const { textoNome, textoTom, textoMomento } = musicas[i];
-      textoResultado += `\n* ${textoNome}  -  *(${textoTom})* / ${textoMomento}`;
+      textoResultado += `\n* *${
+        i + 1
+      })* ${textoNome}  -  *(${textoTom})*  /  ${textoMomento}`;
     }
 
     alert(`Texto digitado:\n${textoResultado}`);
@@ -134,7 +155,7 @@ function Musicas() {
           type="submit"
           onClick={(e) => handleSubmit(e)}
         >
-          Prosseguir
+          Concluir
         </button>
 
         <button

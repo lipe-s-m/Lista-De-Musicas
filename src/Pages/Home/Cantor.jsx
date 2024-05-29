@@ -6,19 +6,39 @@ import { useNavigate } from "react-router-dom";
 
 function Cantor() {
   const navigate = useNavigate();
-  const [nomeCantor, setNomeCantor] = useState();
-  const [dataCulto, setDataCulto] = useState();
+  const [nomeCantor, setNomeCantor] = useState("");
+  const [dataCulto, setDataCulto] = useState("");
 
   const handleChangeCantor = (valor) => {
     setNomeCantor(valor);
   };
-  const handleChangeData = (valor) => {
-    setDataCulto(valor);
+  const handleChangeData = (value) => {
+    value = value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+
+    if (value.length > 2) {
+      value = value.slice(0, 2) + "/" + value.slice(2);
+    }
+    if (value.length > 5) {
+      value = value.slice(0, 5) + "/" + value.slice(5, 9);
+    }
+    if (value.length > 10) {
+      value = value.slice(0, 10); // Limita a entrada a 10 caracteres
+    }
+
+    setDataCulto(value);
   };
 
   // texto enviado
   const handleSubmit = (event) => {
-    navigate(`/Musicas/${nomeCantor}/${dataCulto}`);
+
+    if(nomeCantor.length === 0 || dataCulto.length < 10){
+      alert("preenche os bgl mano");
+    }
+    else{
+      const formattedDate = dataCulto.replace(/\//g, "-");
+      navigate(`/Musicas/${nomeCantor}/${formattedDate}`);
+    }
+   
   };
 
   return (
@@ -35,7 +55,7 @@ function Cantor() {
             <img
               className="info-nome-img"
               src={nomeIcon}
-              alt="Icone nome da musica"
+              alt="Icone nome do cantor"
             ></img>
             <label className="info-label-nome">
               <input
@@ -54,14 +74,15 @@ function Cantor() {
             <img
               className="info-momento-img"
               src={momentoIcon}
-              alt="Ícone momento da musica"
+              alt="Ícone data do culto"
             ></img>
-            <label className="info-label-momento">
+            <label className="info-label-data">
               <input
                 type="text"
                 value={dataCulto}
                 onChange={(e) => handleChangeData(e.target.value)}
-                placeholder="Insira a Data do Culto aqui"
+                placeholder="Insira a Data do Culto aqui (dd/mm/aaaa)"
+                maxLength="10"
               />
             </label>
             <hr></hr>
