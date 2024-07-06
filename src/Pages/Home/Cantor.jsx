@@ -8,37 +8,32 @@ function Cantor() {
   const navigate = useNavigate();
   const [nomeCantor, setNomeCantor] = useState("");
   const [dataCulto, setDataCulto] = useState("");
+  const [dataFormatada, setDataFormatada] = useState("");
 
   const handleChangeCantor = (valor) => {
     setNomeCantor(valor);
   };
-  const handleChangeData = (value) => {
-    value = value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
-
-    if (value.length > 2) {
-      value = value.slice(0, 2) + "/" + value.slice(2);
+  const handleChangeData = (event) => {
+    const partes = event.target.value.split("-");
+    if (partes.length === 3) {
+      const ano = partes[0];
+      const mes = partes[1];
+      const dia = partes[2];
+      const dateFormatada = `${dia}/${mes}/${ano}`;
+      setDataFormatada(dateFormatada);
     }
-    if (value.length > 5) {
-      value = value.slice(0, 5) + "/" + value.slice(5, 9);
-    }
-    if (value.length > 10) {
-      value = value.slice(0, 10); // Limita a entrada a 10 caracteres
-    }
-
-    setDataCulto(value);
+    setDataCulto(event.target.value);
   };
 
   // texto enviado
   const handleSubmit = (event) => {
-
-    if(nomeCantor.length === 0 || dataCulto.length < 10){
+    if (nomeCantor.length === 0 || dataCulto.length < 10) {
       alert("Você deve preencher todos os campos para poder prosseguir!");
-    }
-    else{
-      const formattedDate = dataCulto.replace(/\//g, "-");
+    } else {
+      const formattedDate = dataFormatada.replace(/\//g, "-");
+      console.log(dataFormatada);
       navigate(`/Musicas/${nomeCantor}/${formattedDate}`);
     }
-   
   };
 
   return (
@@ -78,11 +73,10 @@ function Cantor() {
             ></img>
             <label className="info-label-data">
               <input
-                type="text"
+                type="date"
                 value={dataCulto}
-                onChange={(e) => handleChangeData(e.target.value)}
-                placeholder="Insira a Data do Culto (dd/mm/aaaa)"
-                maxLength="10"
+                onChange={(e) => handleChangeData(e)}
+                placeholder="Insira a Data do Culto"
               />
             </label>
             <hr></hr>

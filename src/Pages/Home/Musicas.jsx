@@ -33,7 +33,6 @@ function Musicas() {
     console.log(data);
     const [dia, mes, ano] = data.split("/");
     const dataObj = new Date(`${ano}-${mes}-${dia}`);
-    console.log(dataObj);
     const diaSemana = [
       "Segunda-feira",
       "Terça-feira",
@@ -49,7 +48,7 @@ function Musicas() {
   // texto enviado
   const handleSubmit = (event) => {
     const diaSemana = obterDiaSemana(dataFormatted);
-    let textoResultado = `*Louvores ${diaSemana} - (${dataFormatted})* \n \n*[ ${nomeCantor} ]*`;
+    let textoResultado = `*Louvores ${diaSemana} - (${dataFormatted})* \n \n*[ ${nomeCantor} ]*\n`;
     event.preventDefault();
     for (let i = 0; i < musicas.length; i++) {
       const { textoNome, textoTom, textoMomento } = musicas[i];
@@ -58,7 +57,7 @@ function Musicas() {
       })* ${textoNome}  -  *(${textoTom})*  /  ${textoMomento}`;
     }
 
-    alert(`Texto digitado:\n${textoResultado}`);
+    alert(`Clique no OK para Copiar:\n\n${textoResultado}`);
 
     // Copia o texto para a área de transferência
     const tempTextArea = document.createElement("textarea");
