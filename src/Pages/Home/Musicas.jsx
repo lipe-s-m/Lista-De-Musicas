@@ -52,9 +52,8 @@ function Musicas() {
     event.preventDefault();
     for (let i = 0; i < musicas.length; i++) {
       const { textoNome, textoTom, textoMomento } = musicas[i];
-      textoResultado += `\n* *${
-        i + 1
-      })* ${textoNome}  -  *(${textoTom})*  /  ${textoMomento}`;
+      textoResultado += `\n* *${i + 1
+        })* ${textoNome}  -  *(${textoTom})*  /  ${textoMomento}`;
     }
 
     alert(`Clique no OK para Copiar:\n\n${textoResultado}`);
@@ -150,6 +149,14 @@ function Musicas() {
           </form>
         ))}
         <button
+          className="adicionar-musica"
+          type="button"
+          onClick={adicionarMusica}
+        >
+          Adicionar Musica
+        </button>
+
+        <button
           className="confirmar-envio"
           type="submit"
           onClick={(e) => handleSubmit(e)}
@@ -157,13 +164,7 @@ function Musicas() {
           Concluir
         </button>
 
-        <button
-          className="adicionar-musica"
-          type="button"
-          onClick={adicionarMusica}
-        >
-          Adicionar Musica
-        </button>
+
       </div>
     </>
   );

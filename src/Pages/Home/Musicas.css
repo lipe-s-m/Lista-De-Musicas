@@ -1,13 +1,21 @@
+* {
+  box-sizing: content-box;
+}
+
 .container-fundo {
   background-color: #f2efe5;
   width: 490px;
   margin: 0 auto 300px;
   margin-top: 5%;
   border-radius: 30px;
-  justify-content: center;
   padding: 20px;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .container-fundo-cantor {
   background-color: #f2efe5;
   width: 490px;
@@ -17,7 +25,11 @@
   justify-content: center;
   padding: 20px;
   padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .title {
   width: auto;
   font-size: 56px;
@@ -26,15 +38,15 @@
   opacity: 90%;
   margin-top: 6%;
 }
+
 .info {
   width: 420px;
   height: 200px;
-  position: relative;
-  margin-top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 30px;
+  margin-top: 5%;
+  margin-bottom: 10%;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* NOME */
@@ -42,6 +54,7 @@
   width: auto;
   height: 72px;
 }
+
 .info-nome-title {
   width: auto;
   height: 32px;
@@ -51,9 +64,12 @@
   font-size: 22px;
   font-weight: 560;
 }
+
 .info-nome-img {
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-  background-position: left center; /* Cola a imagem à esquerda */
+  background-size: cover;
+  /* Ajusta o tamanho da imagem para cobrir toda a área */
+  background-position: left center;
+  /* Cola a imagem à esquerda */
   width: 25px;
   height: 24px;
   margin-left: 8px;
@@ -61,23 +77,29 @@
 }
 
 .info-label-nome {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   margin-top: 2%;
   width: 350px;
 }
+
 .info-label-nome input {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
   left: 3%;
   height: 32px;
   width: 350px;
   border: none;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   background-color: #f2efe5;
   top: -5px;
 }
+
 .info-label-nome input::placeholder {
   color: black;
   opacity: 20%;
@@ -86,12 +108,17 @@
 }
 
 hr {
-  width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+  width: 100%;
+  /* Ajusta a largura para preencher toda a largura do contêiner pai */
   height: 0.1px;
-  border: none; /* Remove a borda padrão */
-  background-color: #000; /* Define a cor do traço */
-  margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
-  opacity: 0.5; /* Define a opacidade do traço */
+  border: none;
+  /* Remove a borda padrão */
+  background-color: #000;
+  /* Define a cor do traço */
+  margin-top: -2px;
+  /* Espaçamento superior entre o hr e o conteúdo acima */
+  opacity: 0.5;
+  /* Define a opacidade do traço */
 }
 
 /* TOM */
@@ -101,6 +128,7 @@ hr {
   width: auto;
   height: 72px;
 }
+
 .info-tom-title {
   width: auto;
   height: 32px;
@@ -110,9 +138,12 @@ hr {
   font-size: 22px;
   font-weight: 560;
 }
+
 .info-tom-img {
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-  background-position: left center; /* Cola a imagem à esquerda */
+  background-size: cover;
+  /* Ajusta o tamanho da imagem para cobrir toda a área */
+  background-position: left center;
+  /* Cola a imagem à esquerda */
   width: 25px;
   height: 24px;
   margin-left: 8px;
@@ -120,23 +151,29 @@ hr {
 }
 
 .info-label-tom {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   margin-top: 2%;
   width: 350px;
 }
+
 .info-label-tom input {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
   left: 3%;
   height: 32px;
   width: 350px;
   border: none;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   background-color: #f2efe5;
   top: -5px;
 }
+
 .info-label-tom input::placeholder {
   color: black;
   opacity: 20%;
@@ -145,12 +182,17 @@ hr {
 }
 
 hr {
-  width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+  width: 100%;
+  /* Ajusta a largura para preencher toda a largura do contêiner pai */
   height: 0.1px;
-  border: none; /* Remove a borda padrão */
-  background-color: #000; /* Define a cor do traço */
-  margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
-  opacity: 0.5; /* Define a opacidade do traço */
+  border: none;
+  /* Remove a borda padrão */
+  background-color: #000;
+  /* Define a cor do traço */
+  margin-top: -2px;
+  /* Espaçamento superior entre o hr e o conteúdo acima */
+  opacity: 0.5;
+  /* Define a opacidade do traço */
 }
 
 /* TOM */
@@ -160,6 +202,7 @@ hr {
   width: auto;
   height: 72px;
 }
+
 .info-momento-title {
   width: auto;
   height: 32px;
@@ -169,9 +212,12 @@ hr {
   font-size: 22px;
   font-weight: 560;
 }
+
 .info-momento-img {
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-  background-position: left center; /* Cola a imagem à esquerda */
+  background-size: cover;
+  /* Ajusta o tamanho da imagem para cobrir toda a área */
+  background-position: left center;
+  /* Cola a imagem à esquerda */
   width: 25px;
   height: 24px;
   margin-left: 8px;
@@ -179,249 +225,308 @@ hr {
 }
 
 .info-label-momento {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   margin-top: 2%;
   width: 350px;
 }
+
 .info-label-momento input {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
   left: 1.5%;
   height: 32px;
   width: 375px;
   border: none;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   background-color: #f2efe5;
   top: -5px;
 }
+
 .info-label-momento input::placeholder {
   color: black;
   opacity: 20%;
   font-size: 22px;
   font-weight: 200;
 }
+
 .info-label-data {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   margin-top: 2%;
   width: 350px;
 }
+
 .info-label-data input {
-  display: inline-block; /* Isso permite definir largura e altura */
+  display: inline-block;
+  /* Isso permite definir largura e altura */
   position: relative;
   left: 1.5%;
   height: 32px;
   width: 375px;
   border: none;
-  text-align: center; /* Centralize o conteúdo do rótulo */
+  text-align: center;
+  /* Centralize o conteúdo do rótulo */
   background-color: #f2efe5;
   top: -5px;
 }
+
 .info-label-data input::placeholder {
   color: black;
   opacity: 20%;
   font-size: 18.4px;
   font-weight: 200;
 }
-input{
+
+input {
   font-size: 20px;
 }
 
 hr {
-  width: 100%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
+  width: 100%;
+  /* Ajusta a largura para preencher toda a largura do contêiner pai */
   height: 0.1px;
-  border: none; /* Remove a borda padrão */
-  background-color: #000; /* Define a cor do traço */
-  margin-top: -2px; /* Espaçamento superior entre o hr e o conteúdo acima */
-  opacity: 0.5; /* Define a opacidade do traço */
+  border: none;
+  /* Remove a borda padrão */
+  background-color: #000;
+  /* Define a cor do traço */
+  margin-top: -2px;
+  /* Espaçamento superior entre o hr e o conteúdo acima */
+  opacity: 0.5;
+  /* Define a opacidade do traço */
 }
 
 .linha-divisoria {
+  box-sizing: border-box;
   margin: 0 auto;
-  width: 70%; /* Ajusta a largura para preencher toda a largura do contêiner pai */
-  height: 2px;
-  border-style: dashed; /* Define um estilo de linha pontilhada */
+  width: 70%;
+  /* Ajusta a largura para preencher toda a largura do contêiner pai */
+  height: 1px;
+  border-style: dashed;
+  /* Define um estilo de linha pontilhada */
   border-color: aliceblue;
-  background-color: #290202; /* Define a cor do traço */
-  margin-top: 20px; /* Espaçamento superior entre o hr e o conteúdo acima */
-  opacity: 0.5; /* Define a opacidade do traço */
-  display: flex;
+  background-color: #290202;
+  /* Define a cor do traço */
+  margin-top: 1rem;
+  /* Espaçamento superior entre o hr e o conteúdo acima */
+  opacity: 0.5;
+  /* Define a opacidade do traço */
   margin-bottom: 5%;
+  padding: 1px;
 }
 
 /* botoes */
 .proxima-pagina {
   width: 200px;
   height: 50px;
-  display: block;
   background-color: #A79277;
   color: #f2efe5;
   font-weight: bold;
   font-size: 22px;
   border-radius: 30px;
-  position: absolute;
-  left: 50%; /* Centralizar o botão horizontalmente */
-  transform: translateX(-50%); /* Centralizar o botão horizontalmente */
+
   margin-top: -4.5%;
 }
+
 .confirmar-envio {
   width: 180px;
   height: 50px;
-  display: block;
   background-color: #A79277;
   color: #f2efe5;
   font-weight: bold;
   font-size: 22px;
   border-radius: 30px;
-  position: absolute;
-  left: 50%; /* Centralizar o botão horizontalmente */
-  transform: translateX(-50%); /* Centralizar o botão horizontalmente */
-  margin-top: 5.5%;
+  /* Centralizar o botão horizontalmente */
+  margin-top: 5%;
 }
+
 .excluir-musica {
   background-color: #d9534f;
-  margin-top: 15px;
-  display: flex;
-  margin-left: auto;
   width: 110px;
   height: 38px;
+  margin-right: 0;
+  margin-top: 4%;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 18px;
+  padding: 0.4rem 0.3rem;
   color: #f2efe5;
   border-radius: 30px;
+  align-self: flex-end;
 }
+
 .adicionar-musica {
   background-color: #5cb85c;
-  margin-top: 20px;
-  display: flex;
   width: 200px;
   height: 50px;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
   font-size: 18px;
   color: #f2efe5;
   margin: 0 auto;
   border-radius: 30px;
+  margin-top: 6rem;
 }
 
-button:hover{
+button:hover {
   opacity: 0.8;
 }
 
 /* celular */
 @media (max-width: 355px) {
+
   .container-fundo {
     width: 70%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
+
   .container-fundo-cantor {
     width: 70%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
+
   .title {
     width: auto;
+    font-size: 42px;
   }
-  .linha-divisoria{
-    margin-top: 52%; /* Espaçamento superior entre o hr e o conteúdo acima */
 
+  .linha-divisoria {
+    margin-bottom: -1rem;
   }
+
   .info {
     width: auto;
     padding-bottom: 100px;
   }
+
   .info-data,
   .info-momento,
   .info-nome,
   .info-tom {
     margin-top: 40px;
   }
+
   .info-label-data,
   .info-label-momento,
   .info-label-nome,
   .info-label-tom {
     width: 90%;
   }
+
   .info-label-data input,
   .info-label-momento input,
   .info-label-nome input,
   .info-label-tom input {
     width: 100%;
   }
-  .info-label-data input::placeholder{
+
+  .info-label-data input::placeholder {
     font-size: 11.3px;
 
   }
+
   .info-label-momento input::placeholder,
   .info-label-nome input::placeholder,
   .info-label-tom input::placeholder {
     font-size: 12.3px;
     text-align: center;
   }
-  .adicionar-musica{
-    margin-bottom: 18%;
+
+  .proxima-pagina {
+    margin-top: -4rem;
     height: 40px;
-    width: 190px;
-    margin-top: 22%;
-    
+    width: 180px;
+    font-size: 18px;
   }
-  .confirmar-envio{
-    margin-top: 24%;
+
+  .adicionar-musica {
+    margin-top: 5rem;
+    margin-bottom: -1%;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+
   }
-  .excluir-musica{
-    margin-top: 30px;
+
+  .confirmar-envio {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+
   }
+
+  .excluir-musica {
+    margin-top: 22px;
+    padding: 0.1rem, 0;
+    width: 30%;
+    font-size: 14px;
+    align-self: flex-end;
+  }
+
   .info-tom-img,
   .info-momento-img,
-  .info-nome-img{
+  .info-nome-img {
     margin-left: 0px;
     height: 17px;
     width: 18px;
   }
 }
+
 @media (min-width: 355px) and (max-width: 387px) {
   .container-fundo {
     width: 70%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
+
   .container-fundo-cantor {
     width: 70%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
+
   .title {
     width: auto;
-  }
-  .linha-divisoria{
-    margin-top: 52%; /* Espaçamento superior entre o hr e o conteúdo acima */
+    font-size: 42px;
 
   }
+
+  .linha-divisoria {
+    margin-bottom: -1rem;
+  }
+
   .info {
     width: auto;
     padding-bottom: 90px;
   }
+
   .info-data,
   .info-momento,
   .info-nome,
   .info-tom {
     margin-top: 40px;
   }
+
   .info-label-data,
   .info-label-momento,
   .info-label-nome,
   .info-label-tom {
     width: 230px;
   }
+
   .info-label-data input,
   .info-label-momento input,
   .info-label-nome input,
   .info-label-tom input {
     width: 225px;
   }
+
   .info-label-data input::placeholder,
   .info-label-momento input::placeholder,
   .info-label-nome input::placeholder,
@@ -429,53 +534,81 @@ button:hover{
     font-size: 12.3px;
     text-align: center;
   }
-  .adicionar-musica{
-    margin-bottom: 18%;
+
+  .proxima-pagina {
+    margin-top: -4rem;
     height: 40px;
-    width: 190px;
-    margin-top: 22%;
-    
+    width: 180px;
+    font-size: 18px;
   }
-  .confirmar-envio{
-    margin-top: 24%;
+
+  .adicionar-musica {
+    margin-top: 5rem;
+    margin-bottom: -1%;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+
   }
-  .excluir-musica{
-    margin-top: 30px;
+
+  .confirmar-envio {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+
   }
+
+  .excluir-musica {
+    margin-top: 22px;
+    padding: 0.1rem, 0;
+    width: 30%;
+    font-size: 14px;
+    align-self: flex-end;
+  }
+
+
   .info-tom-img,
   .info-momento-img,
-  .info-nome-img{
+  .info-nome-img {
     margin-left: 0px;
     height: 17px;
     width: 18px;
   }
 }
+
 @media (min-width: 388px) and (max-width: 450px) {
   .container-fundo {
-    width: 74%;
-    padding-bottom: 20%;
+    width: 80%;
+    padding-bottom: 12%;
   }
+
   .container-fundo-cantor {
     width: 74%;
-    padding-bottom: 0.1%;
+    padding-bottom: 8%;
   }
+
   .title {
     width: auto;
-  }
-  .linha-divisoria{
-    margin-top: 52%; /* Espaçamento superior entre o hr e o conteúdo acima */
+    font-size: 45px;
 
   }
+
+  .linha-divisoria {
+    margin-bottom: -1rem;
+  }
+
   .info {
     width: auto;
     padding-bottom: 90px;
   }
+
   .info-data,
   .info-momento,
   .info-nome,
   .info-tom {
     margin-top: 40px;
   }
+
   .info-label-data,
   .info-label-momento,
   .info-label-nome,
@@ -483,135 +616,216 @@ button:hover{
     width: 90%;
 
   }
-  .info-label-data input{
-        width: 100%;
+
+  .info-label-data input {
+    width: 100%;
   }
+
   .info-label-momento input,
   .info-label-nome input,
   .info-label-tom input {
     width: 100%;
     left: 1%;
   }
-  .info-label-data input::placeholder{
+
+  .info-label-data input::placeholder {
     font-size: 13.9px;
   }
+
   .info-label-momento input::placeholder,
   .info-label-nome input::placeholder,
   .info-label-tom input::placeholder {
     font-size: 15.7px;
     text-align: center;
   }
-  .excluir-musica{
-    margin-top: 15%;
+
+  .adicionar-musica {
+    margin-top: 5rem;
+    margin-bottom: -1%;
+    height: 45px;
+    width: 200px;
   }
-  .adicionar-musica{
-    margin-top: 20%;
-    margin-bottom: 22%;
-    height: 43px;
-    width: 190px;
-    
+
+  .confirmar-envio {
+    height: 45px;
+    width: 200px;
   }
-  .confirmar-envio{
-    margin-top: 26%;
+
+  .excluir-musica {
+    margin-top: 25px;
+    padding: 0.3rem, 0;
+    width: 30%;
+    font-size: 16px;
+    align-self: flex-end;
   }
-  .proxima-pagina{
-    margin-top: -25%;
+
+  .proxima-pagina {
+    margin-top: -4rem;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
   }
+
   .info-tom-img,
   .info-momento-img,
-  .info-nome-img{
+  .info-nome-img {
     margin-left: 0px;
   }
 }
+
 @media (min-width: 451px) and (max-width: 567px) {
   .container-fundo {
     width: 74%;
-    padding-bottom: 20%;
+    padding-bottom: 8%;
   }
+
   .container-fundo-cantor {
     width: 74%;
-    padding-bottom: 20%;
+    padding-bottom: 8%;
   }
 
-.title {
-  width: auto;
-}
-.linha-divisoria{
-  margin-top: 52%; /* Espaçamento superior entre o hr e o conteúdo acima */
+  .title {
+    width: auto;
+    font-size: 50px;
 
+  }
+
+  .linha-divisoria {
+    margin-bottom: -0.7rem;
+  }
+
+  .info {
+    width: 80%;
+    padding-bottom: 19%;
+  }
+
+  .info-momento,
+  .info-nome,
+  .info-tom {
+    margin-top: 40px;
+  }
+
+  .info-label-data,
+  .info-label-momento,
+  .info-label-nome,
+  .info-label-tom {
+    width: 80%;
+  }
+
+  .info-label-data input,
+  .info-label-momento input,
+  .info-label-nome input,
+  .info-label-tom input {
+    width: 100%;
+  }
+
+  .info-label-data input::placeholder {
+    font-size: 16.8px;
+  }
+
+  .info-label-momento input::placeholder,
+  .info-label-nome input::placeholder,
+  .info-label-tom input::placeholder {
+    font-size: 17.3px;
+    text-align: center;
+  }
+
+  .proxima-pagina {
+    margin-top: -3rem;
+  }
+
+  .adicionar-musica {
+    margin-top: 7rem;
+    margin-bottom: -1%;
+    height: 45px;
+    width: 200px;
+  }
+
+  .confirmar-envio {
+    height: 45px;
+    width: 200px;
+  }
+
+  .excluir-musica {
+    margin-top: 25px;
+    padding: 0.3rem, 0;
+    width: 30%;
+    font-size: 16px;
+    align-self: flex-end;
+    margin-right: -1rem;
+  }
 }
-.info {
-  width: auto;
-  padding-bottom: 19%;
-}
-.info-momento,
-.info-nome,
-.info-tom {
-  margin-top: 40px;
-}
-.info-label-data,
-.info-label-momento,
-.info-label-nome,
-.info-label-tom {
-  width: 90%;
-}
-.info-label-data input,
-.info-label-momento input,
-.info-label-nome input,
-.info-label-tom input {
-  width: 100%;
-}
-.info-label-data input::placeholder{
-  font-size: 16.8px;
-}
-.info-label-momento input::placeholder,
-.info-label-nome input::placeholder,
-.info-label-tom input::placeholder {
-  font-size: 17.3px;
-  text-align: center;
-}
-.adicionar-musica{
-  margin-bottom: 10%;
-  height: 43px;
-  width: 190px;
-  
-  
-}
-.confirmar-envio{
-  margin-top: 55px;
-}
-.excluir-musica{
-  margin-top: 30px;
-}
-}
-/* tablet */
-@media (min-width: 568px) and (max-width: 1024px) {
+
+@media (min-width: 568px) and (max-width: 759px) {
   .container-fundo {
-    width: 74%;
-    padding-bottom: 20%;
+    width: 75%;
+    padding-bottom: 5%;
+    padding-top: 3%;
   }
+
   .container-fundo-cantor {
-    width: 74%;
-    padding-bottom: 20%;
+    width: 75%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+
   }
-  
+
+  .info {
+    width: 400px;
+  }
+
+  .adicionar-musica {
+    margin-top: 7rem;
+    margin-bottom: -1%;
+    height: 53px;
+    width: 200px;
+  }
+
+  .confirmar-envio {
+    height: 53px;
+    width: 200px;
+  }
+
+  .linha-divisoria {
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 760px) and (max-width: 1024px) {
+  .container-fundo {
+    width: 33rem;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .container-fundo-cantor {
+    width: 33rem;
+    padding-bottom: 5%;
+    padding-top: 3%;
+
+  }
+
   .info {
     width: 450px;
   }
-  .adicionar-musica{
-    margin-bottom: 0%;
-    height: 63px;
-    width: 240px;
-  }
-  .confirmar-envio{
-    margin-top: 14%;
-    height: 63px;
-    width: 240px;
-  }
-  .proxima-pagina{
 
-      height: 63px;
-      width: 240px;
-    
+  .adicionar-musica {
+    margin-bottom: -1%;
+    height: 53px;
+    width: 200px;
+  }
+
+  .confirmar-envio {
+    height: 53px;
+    width: 200px;
+  }
+
+  .proxima-pagina {
+
+    height: 53px;
+    width: 200px;
+
   }
 }
