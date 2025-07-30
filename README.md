@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# 🎶 PlaySet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Status do Projeto](https://img.shields.io/badge/status-concluído-green.svg) 
+![Licença](https://img.shields.io/badge/license-MIT-blue.svg) 
+![Feito com React](https://img.shields.io/badge/React-18-61dafb?logo=react)
 
-## Available Scripts
+Desenvolvi este sistema para **auxiliar os ministros na criação de repertórios de louvores em suas igrejas**, proporcionando uma **padronização eficiente das listas de músicas**. 🎵  
+A ideia surgiu da minha própria experiência e do **tempo considerável** que esse processo demanda.  
 
-In the project directory, you can run:
+Com este sistema, busco **otimizar e simplificar** a tarefa, permitindo que os usuários se concentrem no essencial, enquanto a aplicação cuida da **estilização do repertório**. ✨  
 
-### `npm start`
+➡️ É simples de usar: **Preencha os campos, clique em "Ok" e cole a mensagem copiada no grupo do Louvor no WhatsApp!** 📲  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+  <img src="https://i.postimg.cc/KvWqf4gt/image.png" alt="Demonstração do App" width="300"/>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📌 Tabela de Conteúdos
+1. [📖 Sobre o Projeto](#-sobre-o-projeto)  
+2. [🚀 Funcionalidades](#-funcionalidades)  
+3. [💻 Tecnologias Utilizadas](#-tecnologias-utilizadas)  
+4. [🏁 Como Começar](#-como-começar)  
+5. [📫 Contato](#-contato)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📖 Sobre o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este projeto tem como foco:  
+- **Facilitar a criação de repertórios de louvores** 🎶  
+- **Padronizar as listas** para mais clareza e organização 📋  
+- **Agilizar o compartilhamento no WhatsApp** 📲  
+- Oferecer uma **interface simples, responsiva e intuitiva** 🌐  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 🎯 O objetivo é que o ministro se concentre no **louvor e na adoração**, enquanto a aplicação cuida da parte organizacional.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+✅ **Criação rápida de repertórios**  
+✅ **Cópia automática para WhatsApp**  
+✅ **Layout padronizado e limpo**  
+✅ **Interface responsiva e moderna**  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💻 Tecnologias Utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Framework:** React 18 ⚛️  
+- **Linguagens:** JavaScript (ES6+), HTML5, CSS3 🎨  
+- **Ferramentas:** Visual Studio Code 🛠️  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🏁 Como Começar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Siga os passos abaixo para executar o projeto em sua máquina local.
 
-### Code Splitting
+### 🔧 Pré-requisitos  
+- [Node.js](https://nodejs.org/) **v20+**  
+- [NPM](https://www.npmjs.com/) (vem junto com Node.js)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### ⚙️ Instalação
+```bash
+# Clone o repositório
+git clone https://github.com/lipe-s-m/gerador-repertorio-igreja.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Acesse a pasta do projeto
+cd gerador-repertorio-igreja
 
-### Making a Progressive Web App
+# Instale as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Inicie o servidor de desenvolvimento
+npm start
+Depois, abra http://localhost:3000/ no navegador 🚀
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 📫 Contato
+- 👤 Felipe Serejo Monteiro
 
-### Deployment
+- 🔗 LinkedIn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- ✉️ felipe.s.m1609@gmail.com
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center"> Feito com ❤️ por Felipe Serejo Monteiro </p> 
